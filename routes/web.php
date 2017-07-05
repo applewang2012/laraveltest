@@ -19,7 +19,7 @@ Route::get('basic1', function(){
    return view('welcome');
 });
 
-Route::post('basic2', function(){
+Route::any('basic2', function(){
    return 'Basic2 test post ';
 });
 //多请求路由
