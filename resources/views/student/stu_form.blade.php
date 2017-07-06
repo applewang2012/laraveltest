@@ -1,4 +1,4 @@
-<form class="form-horizontal" method="post" action="@if(isset($studentmodle->id)){{url('/student/save')}}@else @endif">
+<form class="form-horizontal" method="post" action="{{url('/student/save')}}">
     {{csrf_field()}} {{--方法二，添加这句话--}}
     <div class="form-group">
         <label for="name" class="col-sm-2 control-label">姓名</label>
